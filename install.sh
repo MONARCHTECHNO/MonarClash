@@ -5,7 +5,7 @@ type bash &>/dev/null && shtype=bash || shtype=sh
 echo='echo -e' && [ -n "$(echo -e|grep e)" ] && echo=echo
 
 echo "***********************************************"
-echo "**                 欢迎使用                   **"
+echo "**                 欢迎使用                  **"
 echo "**                MonarClash                 **"
 echo "**                             by  MONARCH   **"
 echo "***********************************************"
