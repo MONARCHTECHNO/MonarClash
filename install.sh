@@ -55,11 +55,11 @@ gettar(){
 		echo -----------------------------------------------
 		echo 开始解压文件！
 		mkdir -p $clashdir > /dev/null
-		tar -zxf '/tmp/MonarClash.tar' -C $clashdir/ || tar -zxf --no-same-owner '/tmp/MonarClash.tar.gz' -C $clashdir/
+		tar -zxf '/tmp/MonarClash.tar' -C $clashdir/ || tar -zxf --no-same-owner '/tmp/MonarClash.tar' -C $clashdir/
 		if [ -f $clashdir/init.sh ];then
 			source $clashdir/init.sh >/dev/null
 		else
-			rm -rf /tmp/MonarClash.tar.gz
+			rm -rf /tmp/MonarClash.tar
 			$echo "\033[33m文件解压失败！\033[0m"
 			error_down
 			exit 1
